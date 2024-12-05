@@ -1,0 +1,15 @@
+{
+  "name": "Interest Calculator",
+  "version": "1.0.0",
+  "description": "An interest calculator that will calculate the interest earned and the total amount of money earned when given the the principal, interest rate, number of times compounded per year, and the total number of years.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Tara Ramanathan",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}

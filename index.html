@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="compoundInterest.js" defer></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica"
+  />
+  <body>
+    <article>
+      <header>
+        <div id="leftMoneyBag">💰</div>
+        <div>Interest Calculator</div>
+        <div id="rightMoneyBag">💰</div>
+      </header>
+      <div id="background">
+        <main>
+          <img
+            src="https://media.istockphoto.com/id/1366762744/vector/income-growth-concept-investment-management-successful-investments.jpg?s=612x612&w=0&k=20&c=Duj93l01pV_RcQynDsDE90FrgjuLWmNnIcjdUFXy-aw="
+            alt="upwards graph with stacks of coins"
+            style="width: 200px; height: 150px"
+          />
+          <form>
+            <div>Principal</div>
+            <input id="principal" />
+            <div>Interest Rate</div>
+            <input id="interestRate" />
+            <div>Periods</div>
+            <select id="periods">
+              <option>---</option>
+              <option value="1">Yearly</option>
+              <option value="4">Quarterly</option>
+              <option value="12">Monthly</option>
+              <option value="52">Weekly</option>
+              <option value="365">Daily</option>
+            </select>
+            <div>Years</div>
+            <input id="years" />
+          </form>
+          <p>Interest: <output id="accumulated" /></p>
+          <p>Total: <output id="total" /></p>
+        </main>
+      </div>
+      <footer>
+        <a
+          href="https://codesandbox.io/p/sandbox/5vkwvk?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cm0xl6zdc00063b6ic7u60g4y%2522%252C%2522sizes%2522%253A%255B100%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cm0xl6zdc00023b6ijx46fnzy%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cm0xl6zdc00033b6ioxgzypb6%2522%257D%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cm0xl6zdc00053b6i6aqhd2en%2522%257D%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cm0xl6zdc00023b6ijx46fnzy%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0xl6zdc00013b6i8s5veu5y%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252Findex.html%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%252C%257B%2522id%2522%253A%2522cm0yeiwpg00023b6i3okcab5l%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A11%252C%2522startColumn%2522%253A49%252C%2522endLineNumber%2522%253A11%252C%2522endColumn%2522%253A49%257D%255D%252C%2522filepath%2522%253A%2522%252Fstyles.css%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%255D%252C%2522id%2522%253A%2522cm0xl6zdc00023b6ijx46fnzy%2522%252C%2522activeTabId%2522%253A%2522cm0yeiwpg00023b6i3okcab5l%2522%257D%252C%2522cm0xl6zdc00053b6i6aqhd2en%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0xl6zdc00043b6i1g3v5sxb%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%257D%255D%252C%2522id%2522%253A%2522cm0xl6zdc00053b6i6aqhd2en%2522%252C%2522activeTabId%2522%253A%2522cm0xl6zdc00043b6i1g3v5sxb%2522%257D%252C%2522cm0xl6zdc00033b6ioxgzypb6%2522%253A%257B%2522tabs%2522%253A%255B%255D%252C%2522id%2522%253A%2522cm0xl6zdc00033b6ioxgzypb6%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Afalse%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D"
+          >Full Code</a
+        >
+      </footer>
+    </article>
+  </body>
+</html>
